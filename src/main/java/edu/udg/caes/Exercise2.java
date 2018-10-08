@@ -13,7 +13,15 @@ public class Exercise2 {
      */
     public static Vector union (Vector a, Vector b)
     {
-        throw new UnsupportedOperationException("Non implemented yet");
+        Vector answer = (Vector)a.clone();
+        answer.addAll(b);
+        return answer;
     }
 
+    /* Ambiguous:
+        - can there be repeated objects?
+        - do they follow any order?
+        - can a & b be NULL?
+        - can a & b components be different types?
+    */
 }
